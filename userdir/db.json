@@ -1,90 +1,90 @@
 {
   "users": [
   {
-    "Full Name": "Adolfo Walker",
+    "FullName": "Adolfo Walker",
     "Country": "Lebanon",
     "Id": 0,
-    "Date of birth": "2005-10-13T08:15:58.878Z",
+    "DateOfBirth": "2005-10-13T08:15:58.878Z",
     "Email": "Austyn.Mueller@bryana.biz",
     "Created at": "1992-11-29T05:19:06.775Z"
   },
   {
-    "Full Name": "Fleta Pagac",
+    "FullName": "Fleta Pagac",
     "Country": "Oman",
     "Id": 1,
-    "Date of birth": "2010-04-17T12:15:10.517Z",
+    "DateOfBirth": "2010-04-17T12:15:10.517Z",
     "Email": "Margaret_Durgan@carolina.tv",
     "Created at": "2015-12-09T00:09:52.165Z"
   },
   {
-    "Full Name": "Florencio Gerlach",
+    "FullName": "Florencio Gerlach",
     "Country": "Montserrat",
     "Id": 2,
-    "Date of birth": "2018-11-13T12:32:06.748Z",
+    "DateOfBirth": "2018-11-13T12:32:06.748Z",
     "Email": "Maximo.Prohaska@kaden.name",
     "Created at": "1988-06-27T03:23:30.885Z"
   },
   {
-    "Full Name": "Efrain Adams",
+    "FullName": "Efrain Adams",
     "Country": "Hong Kong SAR China",
     "Id": 3,
-    "Date of birth": "1987-01-22T21:54:38.192Z",
+    "DateOfBirth": "1987-01-22T21:54:38.192Z",
     "Email": "Toni.Mills@khalid.name",
     "Created at": "1987-03-25T21:46:18.220Z"
   },
   {
-    "Full Name": "Name Welch",
+    "FullName": "Name Welch",
     "Country": "Dominican Republic",
     "Id": 4,
-    "Date of birth": "2011-10-04T18:36:10.600Z",
+    "DateOfBirth": "2011-10-04T18:36:10.600Z",
     "Email": "Eloise.Jakubowski@linnie.me",
     "Created at": "1996-05-20T23:37:31.834Z"
   },
   {
-    "Full Name": "Orland Blick",
+    "FullName": "Orland Blick",
     "Country": "Ethiopia",
     "Id": 5,
-    "Date of birth": "2014-06-14T03:14:15.755Z",
+    "DateOfBirth": "2014-06-14T03:14:15.755Z",
     "Email": "Abigail_Dibbert@pedro.io",
     "Created at": "1987-05-02T07:03:11.865Z"
   },
   {
-    "Full Name": "Hazel Nicolas",
+    "FullName": "Hazel Nicolas",
     "Country": "Jersey",
     "Id": 6,
-    "Date of birth": "1989-09-25T22:14:19.212Z",
+    "DateOfBirth": "1989-09-25T22:14:19.212Z",
     "Email": "Hollie.Hand@cooper.name",
     "Created at": "2010-12-09T17:21:03.995Z"
   },
   {
-    "Full Name": "Chris Cronin",
+    "FullName": "Chris Cronin",
     "Country": "Samoa",
     "Id": 7,
-    "Date of birth": "2018-12-06T01:28:58.971Z",
+    "DateOfBirth": "2018-12-06T01:28:58.971Z",
     "Email": "Edmund@luigi.co.uk",
     "Created at": "2001-04-29T20:43:48.421Z"
   },
   {
-    "Full Name": "Litzy Koepp III",
+    "FullName": "Litzy Koepp III",
     "Country": "New Zealand",
     "Id": 8,
-    "Date of birth": "2018-08-26T12:53:30.113Z",
+    "DateOfBirth": "2018-08-26T12:53:30.113Z",
     "Email": "Cathryn@clotilde.io",
     "Created at": "1994-09-26T10:40:11.628Z"
   },
   {
-    "Full Name": "Jeffrey Mosciski",
+    "FullName": "Jeffrey Mosciski",
     "Country": "British Antarctic Territory",
     "Id": 9,
-    "Date of birth": "2018-01-23T13:05:07.027Z",
+    "DateOfBirth": "2018-01-23T13:05:07.027Z",
     "Email": "Gregoria_Spencer@quinten.org",
     "Created at": "2008-10-12T23:05:42.726Z"
   },
   {
-    "Full Name": "Kendra Kuhic MD",
+    "FullName": "Kendra Kuhic MD",
     "Country": "Bolivia",
     "Id": 10,
-    "Date of birth": "2016-05-21T03:10:07.231Z",
+    "DateOfBirth": "2016-05-21T03:10:07.231Z",
     "Email": "Therese@flossie.name",
     "Created at": "2016-07-08T11:19:19.628Z"
   }
