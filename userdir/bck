@@ -19,7 +19,7 @@ class UserContainer extends React.Component {
       .then(res => {
         const userArray = res.data.map(user => {
           return {
-            id: user.id,
+            id:user.id,
             name: user.FullName,
             country: user.Country,
             email: user.Email,
@@ -38,7 +38,7 @@ class UserContainer extends React.Component {
 
   //function to filter list to only show first/last that matches search
   filteredUsers() {
-    const search = this.state.search.toLowerCase();
+    const search = this.state.search.toLowerCase;
     return this.state.users.filter(user => {
       return (
         user.name.toLowerCase().includes(search)
@@ -46,17 +46,23 @@ class UserContainer extends React.Component {
     });
   }
 
-  delete = (id) => {
-    fetch('http://localhost:5000/users/'+id, {
-      method:"DELETE",
-    }).then((result) => {
-      result.json().then((resp) => {
-        console.log("data deleted")
-      })
-    })
-  }
+  // delete = (id) => {
 
+  //   fetch('http://localhost:5000/users/'+id, {
+  //     method:"DELETE",
+  //   }).then((result) => {
+  //     result.json().then((resp) => {
+  //       fetch('http://localhost:5000/users').then((response)=> {
+  //         response.json().then((result) => {
+  //           this.setState({users:result})
+  //         })
+  //       })
+  //       console.log("data deleted")
+  //     })
+  //   })
+  // }
 
+  
   //function to render a table of users
   renderUsers = () => {
     return this.filteredUsers()
@@ -75,7 +81,21 @@ class UserContainer extends React.Component {
       });
   };
 
+  //depending on which column was clicked, add or remove the arrow
+  //icon specifying the sort direction
+  getHeaderClassName = col => {
+    return this.state.col === col
+      ? `clickable ${this.state.sortDirection}`
+      : `clickable`;
+  };
 
+  //depending on which column was clicked, set the sort direction to
+  //the opposite of what it was.
+  handleSortDirectionChange = col => {
+    this.state.col === col && this.state.sortDirection === "ascending"
+      ? this.setState({ sortDirection: "descending", col: col })
+      : this.setState({ sortDirection: "ascending", col: col });
+  };
 
   //function to return 1 or -1 to sort function depending on sort direction
   sortUsers = (a, b) => {
@@ -107,22 +127,36 @@ class UserContainer extends React.Component {
             <thead>
               <tr>
                 <th scope="col">
-                  <span>
+                  <span
+                    className={this.getHeaderClassName("first")}
+                    onClick={() => {
+                      this.handleSortDirectionChange("first");
+                    }}
+                  >
                     Name
                   </span>
                 </th>
                 <th scope="col">
-                  <span>
+                  <span
+                    className={this.getHeaderClassName("last")}
+                    onClick={() => this.handleSortDirectionChange("last")}
+                  >
                     Country
                   </span>
                 </th>
                 <th scope="col">
-                  <span>
+                  <span
+                    className={this.getHeaderClassName("email")}
+                    onClick={() => this.handleSortDirectionChange("email")}
+                  >
                     Email
                   </span>
                 </th>
                 <th scope="col">
-                  <span>
+                  <span
+                    className={this.getHeaderClassName("dob")}
+                    onClick={() => this.handleSortDirectionChange("dob")}
+                  >
                     Date Of Birth
                   </span>
                 </th>
